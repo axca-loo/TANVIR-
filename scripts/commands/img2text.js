@@ -10,6 +10,7 @@ module.exports = {
        usages: "Link",
        cooldowns: 5,
        dependencies: {
+    "nayan-server": ''
   }
   },
 
@@ -18,7 +19,7 @@ start: async function({ nayan, events, args }) {
     const axios = require("axios")
     const request = require("request")
     const fs = require("fs-extra")
-const { img2text} = require('nayan-apis-server')
+const { img2text} = require('nayan-server')
     const data = await img2text(`${linkanh}`);
   console.log(data);
         var msg = [];

@@ -10,13 +10,13 @@ module.exports.config = {
   cooldowns: 5,
   dependencies: {
     "axios": "",
-    "nayan-imgur-upload-api": ""
+    "imgur-upload-api": ""
   }
 };
 
 module.exports.run = async ({ api, event, args }) => {
   const axios = global.nodemodule['axios'];
-  const { imgur } = require("nayan-imgur-upload-apis");
+  const { imgur } = require("imgur-upload-api");
 
 
   let linkanh = event.messageReply?.attachments[0]?.url || args.join(" ");
